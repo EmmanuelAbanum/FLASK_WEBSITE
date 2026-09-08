@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Admin Dashboard</h1>
+
+<table border="1" width="80%" align="center">
+
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Message</th>
+    </tr>
+
+    {% for message in messages %}
+
+    <tr>
+        <td>{{ message[0] }}</td>
+        <td>{{ message[1] }}</td>
+        <td>{{ message[2] }}</td>
+        <td>{{ message[3] }}</td>
+    </tr>
+
+    {% endfor %}
+
+</table>
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Our Services</h1>
+
+<img src="{{ url_for('static', filename='images/services.png') }}"
+     alt="Services Image">
+
+<br>
+
+<ul>
+    <li>Software Development</li>
+    <li>Artificial Intelligence Solutions</li>
+    <li>Cloud Computing Services</li>
+    <li>Cybersecurity Consulting</li>
+    <li>Mobile Application Development</li>
+    <li>Web Application Development</li>
+    <li>IT Infrastructure Management</li>
+    <li>Database Design and Management</li>
+</ul>
+
+<p>
+    We provide world-class technological solutions to
+    businesses across the globe. Our team specializes
+    in developing scalable, secure, and innovative
+    products that help organizations succeed in the
+    digital age.
+</p>
+
+{% endblock %}

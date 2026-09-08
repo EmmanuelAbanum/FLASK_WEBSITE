@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Welcome to Tech Company</h1>
+
+<img src="{{ url_for('static', filename='images/hero.png') }}" alt="Hero Image">
+
+<p>
+    Building the future with Software Engineering,
+    Artificial Intelligence, Cloud Computing, and
+    Cybersecurity.
+</p>
+
+{% endblock %}
